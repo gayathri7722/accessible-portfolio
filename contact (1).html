@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Gayathri Sava</title>
+  <meta name="description" content="Get in touch with Gayathri Sava using this accessible, keyboard-friendly contact form.">
+  <meta name="author" content="Gayathri Sava">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#14213d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Gayathri Sava">
+  <meta property="og:description" content="Get in touch with Gayathri Sava using this accessible, keyboard-friendly contact form.">
+  <meta property="og:site_name" content="Gayathri Sava Portfolio">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2716%27 fill=%27%2314213d%27/%3E%3Ctext x=%2750%27 y=%2766%27 font-size=%2756%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Georgia%27%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Gayathri Sava, go to home page">Gayathri Sava</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <div class="wrap">
+      <h1>Contact me</h1>
+      <p>You can email me at <a href="mailto:savagayathri@gmail.com">savagayathri@gmail.com</a> or send a message using the form below. Fields marked with <span class="req" aria-hidden="true">*</span><span class="visually-hidden">an asterisk</span> are required.</p>
+
+      <form id="contact-form" action="#" method="post" novalidate aria-labelledby="form-title">
+        <h2 id="form-title" class="visually-hidden">Contact form</h2>
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="field">
+            <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+            <p class="error-msg" id="name-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+            <span class="hint" id="email-hint">We'll only use this to reply to you.</span>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-hint email-error">
+            <p class="error-msg" id="email-error" aria-live="polite"></p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Your message</legend>
+          <div class="field">
+            <label for="subject">Topic</label>
+            <select id="subject" name="subject">
+              <option value="general">General question</option>
+              <option value="collab">Collaboration</option>
+              <option value="feedback">Feedback on my work</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required aria-required="true" aria-describedby="message-error"></textarea>
+            <p class="error-msg" id="message-error" aria-live="polite"></p>
+          </div>
+        </fieldset>
+        <button class="btn" type="submit">Send message</button>
+        <div id="form-status" class="status" role="status" tabindex="-1" hidden>Thanks! Your message is ready to send.</div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <nav aria-label="Footer navigation">
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+      </nav>
+      <p><small>&copy; 2026 Gayathri Sava. Built with semantic HTML5 and WCAG 2.1 AA in mind.</small></p>
+    </div>
+  </footer>
+  <script src="form.js"></script>
+</body>
+</html>
